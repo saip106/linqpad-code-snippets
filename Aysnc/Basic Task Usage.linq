@@ -6,7 +6,8 @@ void Main()
 {
 	var source = new CancellationTokenSource();
 
-	var task = Task.Factory.StartNew<string>(() => {
+	var task = Task.Factory.StartNew<string>(() => 
+	{
 		Thread.Sleep(1000);
 		Console.WriteLine ("Hello Task !!!");
 		Console.WriteLine (Thread.CurrentThread.ManagedThreadId);
